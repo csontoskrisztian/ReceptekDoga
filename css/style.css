@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: georgia;
+    background: url('../pics/bg-body.png') #fff;
+}
+
+.content, .recipes, .pagination, nav ul, main {
+    display: flex;
+}
+
+body>h1 {
+    font-family: 'Lobster';
+    color: limegreen;
+    background-color: white;
+    border: 1px dashed lightgray;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4rem;
+    padding: 25px 0;
+    width: 100%;
+}
+
+
+.wrapper {
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    background: url("../pics/bg-menu.jpg");
+    margin: 0;
+    padding: 0;
+    flex-flow: row nowrap;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    border-right: 1px dashed white;
+    border-left: 1px dashed white;
+    display: block;
+    padding: 20px;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+    flex-flow: row nowrap;
+    margin-top: 20px;
+}
+
+aside {
+    padding: 0 20px;
+    order: 1;
+    flex: 25%;
+}
+
+main {
+    order: 2;
+    flex: 75%;
+    flex-flow: column nowrap;
+}
+
+.recipes {
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.recipe-box {
+    flex-grow: 1;
+
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.recipe-box img {
+    width: 100%;
+}
+
+.recipe-box h2, .recipe-box p {
+    padding: 0 10px;
+}
+
+.pagination {
+    flex-flow: row wrap;
+}
+
+.pagination span {
+    color: white;
+    background: black;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    background: white;
+}
+
+.pagination a:hover {
+    color: white;
+    background: black;
+}
+
+.page {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    padding: 20px 0;
+    border-bottom: 1px dashed lightgrey;
+}
+
+aside li:hover {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
