@@ -66,8 +66,8 @@ nav li:hover {
 }
 
 .content {
-    margin: 40px auto;
     flex-flow: row nowrap;
+    margin-top: 20px;
 }
 
 aside {
@@ -91,7 +91,8 @@ main {
     flex-grow: 1;
 
     width: 300px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     background: white;
 }
 
@@ -101,6 +102,32 @@ main {
 
 .recipe-box h2, .recipe-box p {
     padding: 0 10px;
+}
+
+.pagination {
+    flex-flow: row wrap;
+}
+
+.pagination span {
+    color: white;
+    background: black;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    background: white;
+}
+
+.pagination a:hover {
+    color: white;
+    background: black;
+}
+
+.page {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
 }
 
 aside ul {
