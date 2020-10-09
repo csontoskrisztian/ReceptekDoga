@@ -9,3 +9,15 @@ body {
     font-family: georgia;
     background: url('../pics/bg-body.png') #fff;
 }
+
+body>h1 {
+    font-family: 'Lobster';
+    color: limegreen;
+    background-color: white;
+    border: 1px dashed lightgray;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4rem;
+    padding: 25px 0;
+    width: 100%;
+}
