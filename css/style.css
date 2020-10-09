@@ -73,17 +73,34 @@ nav li:hover {
 aside {
     padding: 0 20px;
     order: 1;
-    flex: 50%;
+    flex: 25%;
 }
 
 main {
     order: 2;
-    flex: 50%;
+    flex: 75%;
     flex-flow: column nowrap;
 }
 
-main .recipes {
+.recipes {
+    flex-flow: row wrap;
     padding: 10px;
+}
+
+.recipe-box {
+    flex-grow: 1;
+
+    width: 300px;
+    margin: 10px;
+    background: white;
+}
+
+.recipe-box img {
+    width: 100%;
+}
+
+.recipe-box h2, .recipe-box p {
+    padding: 0 10px;
 }
 
 aside ul {
