@@ -10,6 +10,10 @@ body {
     background: url('../pics/bg-body.png') #fff;
 }
 
+.content, .recipes, .pagination, nav ul, main {
+    display: flex;
+}
+
 body>h1 {
     font-family: 'Lobster';
     color: limegreen;
@@ -40,7 +44,6 @@ nav ul {
     background: url("../pics/bg-menu.jpg");
     margin: 0;
     padding: 0;
-    display: flex;
     flex-flow: row nowrap;
 }
 
@@ -62,7 +65,44 @@ nav li:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.content, .recipes, .pagination {
-    display: flex;
-    flex-flow: column-reverse nowrap;
+.content {
+    margin: 40px auto;
+    flex-flow: row nowrap;
+}
+
+aside {
+    padding: 0 20px;
+    order: 1;
+    flex: 50%;
+}
+
+main {
+    order: 2;
+    flex: 50%;
+    flex-flow: column nowrap;
+}
+
+main .recipes {
+    padding: 10px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    padding: 20px 0;
+    border-bottom: 1px dashed lightgrey;
+}
+
+aside li:hover {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
 }
